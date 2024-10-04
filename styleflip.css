@@ -1,0 +1,191 @@
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: rgba(17, 17, 17, 0.5);
+        }
+
+        li a:hover {
+            background-color: #141c16;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-image {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://static.wikia.nocookie.net/naknak/images/e/e6/Assorted_Naknak_figures_and_dice.png/revision/latest/scale-to-width-down/1000?cb=20220818025625");
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 5px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+            z-index: 1001;
+        }
+
+      .set-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    margin-left: 70px; /* Adjust this value to shift more or less */
+}
+
+
+        .card {
+            text-align: center;
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            padding: 10px;
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .card-info {
+            margin-top: 10px;
+        }
+		
+		   .card-clik {
+            color: #ccc;
+            font-size: 0.9em;
+        }
+
+        .card-number {
+            color: #ccc;
+            font-size: 0.9em;
+        }
+
+        .card-name {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+		
+		.card-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.card-images img {
+    width: 48%;  /* Ensure both images fit side by side */
+    height: auto;
+    border-radius: 5px;
+}
+		
+body {
+    background-image: url('nfig/stars2.gif'); /* Your GIF path */
+    background-repeat: repeat;
+    background-size: auto;
+    color: white;
+}
+
+.black-background {
+    background-color: black;
+    background-image: none; /* Remove the GIF */
+}
+
+.card {
+    /* Existing styles */
+    transition: transform 0.5s ease; /* Add smooth transition */
+    transform-origin: left center; /* Rotate around the left edge */
+    margin: 5px; /* Optional: Add some space between cards */
+}
+
+.rotated {
+    position: relative; /* Ensures cards do not overlap */
+    margin: 10px; /* Adjust margin as needed */
+}
+
+.hidden {
+    display: none; /* Hides the element */
+}
+
+.small-transparent-banner {
+    background: linear-gradient(90deg, rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.5));
+    color: #ffffff; /* White text */
+    padding: 3px 10px; /* Smaller padding */
+    font-family: 'Press Start 2P', cursive; /* Retro pixelated font */
+    font-size: 11px; /* Smaller font size */
+    text-align: left; /* Align text to the left */
+    border: 1px solid rgba(0, 0, 0, 0.7); /* Semi-transparent black border */
+    box-shadow: 1px 1px rgba(51, 51, 51, 0.7); /* Semi-transparent 3D shadow effect */
+    width: 30%; /* Banner width reduced to 30% */
+    margin: 10px 0; /* Space above and below the banner */

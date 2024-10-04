@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naknak Set List</title>
+ 
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="icon" href="nfig/favicon.ico" type="image/x-icon">
+	
+</head>
+
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Collectible Tracker</h1>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contribute.html">Contribute</a></li>
+             
+            </ul>
+        </div>
+        <div class="visually-hidden">
+            Banner image: An assortment of Naknak figures.
+        </div>
+    </div>
+
+    <button id="toggleBackground">Toggle Background</button>
+	<h1>What do you want to explore?</h1>
+	
+	
+<center><a href="BohrokAwake.html" class="custom-link">Bionicle: Bohrok Awake</a></center>
+<br>
+<center><a href="galidorcards.html" class="custom-link">Galidor Cards</a></center>
+<br>	
+<center><a href="naknaksetlist.html" class="custom-link">Naknak</a></center>
+<br>
+<center><a href="rumblerobotspowercardsbaseseriessetlist.html" class="custom-link">Rumble Robots: Base Series</a></center>
+<center><a href="rumblerobotsdiamondseriessetlist.html" class="custom-link">Rumble Robots: Diamond Series</a></center>
+<center><a href="rumblerobotsinvasionsetlist.html" class="custom-link">Rumble Robots: Invasion Series</a></center>
+<br>
+<center><a href="Legendmaker.html" class="custom-link">Pokemon: ex Legend Makers (t-Chinese)</a></center>	
+	
+
+<br>
+<br>
+<br>
+
+
+	
+	
+	
+
+<!-- Lightbox HTML and JavaScript (Place this before the closing </body> tag) -->
+<div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox();">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged image">
+</div>
+
+
+
+<script>
+    function searchSite() {
+        var query = document.getElementById('searchBar').value.toLowerCase();
+        var pages = {
+            'home': 'index.html',
+            'naknak': 'naknaksetlist.html',
+			'nak nak': 'naknaksetlist.html',
+            'pokemon': 'exlegendmakers.html',
+            'game': 'game.html',
+			'games': 'game.html',
+            // Add more pages here
+        };
+
+        if (pages[query]) {
+            window.location.href = pages[query];
+        } else {
+            alert('Page not found. Try another search term.');
+        }
+    }
+</script>
+
+
+<script>
+    function openLightbox(src) {
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+</script>
+
+
+
+ <script>
+        const button = document.getElementById('toggleBackground');
+        const body = document.body;
+
+        // Check localStorage to set the initial background
+        if (localStorage.getItem('background') === 'black') {
+            body.classList.add('black-background');
+        }
+
+        button.addEventListener('click', function() {
+            body.classList.toggle('black-background');
+            // Update localStorage based on the current background state
+            if (body.classList.contains('black-background')) {
+                localStorage.setItem('background', 'black');
+            } else {
+                localStorage.setItem('background', 'default');
+            }
+        });
+    </script>
+	
+
+
+</body>
+
+</html>
+
+
+
+
+
+	
+
+
+

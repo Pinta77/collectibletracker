@@ -1,0 +1,304 @@
+ ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: rgba(17, 17, 17, 0.5);
+        }
+
+        li a:hover {
+            background-color: #141c16;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-image {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://static.wikia.nocookie.net/naknak/images/e/e6/Assorted_Naknak_figures_and_dice.png/revision/latest/scale-to-width-down/1000?cb=20220818025625");
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 5px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+            z-index: 1001;
+        }
+
+        .set-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .card {
+            text-align: center;
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            padding: 10px;
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .card-info {
+            margin-top: 10px;
+        }
+		
+		   .card-clik {
+            color: #ccc;
+            font-size: 0.9em;
+        }
+
+        .card-number {
+            color: #ccc;
+            font-size: 0.9em;
+        }
+
+        .card-name {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+		
+body {
+    background-image: url('nfig/stars2.gif'); /* Your GIF path */
+    background-repeat: repeat;
+    background-size: auto;
+    color: white;
+}
+
+.black-background {
+    background-color: black;
+    background-image: none; /* Remove the GIF */
+}
+
+#special-image {
+    width: 300px; /* Unique size */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+#special-image:hover {
+    transform: scale(1.05);
+    filter: grayscale(100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    background-color: #333; /* Dark background */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for the banner */
+    font-size: 1.5em; /* Larger font size */
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Spacing below the title */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+    .custom-link:link {
+      color: white; /* Color before the link is clicked */
+    }
+
+    .custom-link:visited {
+      color: limegreen; /* Color after the link is clicked */
+    }
+	
+	.set-section {
+    width: 80%; /* Width of the box */
+    margin: 20px auto; /* Center the box and add margin */
+    border: 1px solid #333; /* Border around the box */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevents content overflow */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.section-title {
+    background-color: #333; /* Title background color */
+    color: #fff; /* Title text color */
+    padding: 10px; /* Padding for the title */
+    font-size: 1.5em; /* Font size for the title */
+    text-align: center; /* Center text */
+    border-bottom: 1px solid #444; /* Bottom border for the title */
+}
+
+.set-list {
+    list-style-type: none; /* No bullet points */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.set-list li {
+    padding: 10px 15px; /* Padding for list items */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.set-list li:nth-child(odd) {
+    background-color: transparent; /* Transparent background for odd items */
+}
+
+.set-list li:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.2); /* Transparent grey for even items */
+}
+
+.set-list li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.1em; /* Font size for links */
+}
+
+.set-list li a:hover {
+    color: lightgreen; /* Change link color on hover */
+}
+
+.highlight {
+    background-color: rgba(128, 128, 128, 0.5); /* Transparent gray */
+    color: black; /* Text color */
+    padding: 2px; /* Optional: Add some padding for better appearance */
+    border-radius: 3px; /* Optional: Rounded corners */
+}
+
+table {
+    width: 50%; /* Adjusted width for narrower table */
+    margin: 20px auto; /* Centers the table with auto margins */
+    border-collapse: collapse;
+    
+    overflow: hidden; /* Prevents border radius from being cut off */
+}
+
+th {
+    background-color: #005f00; /* Dark green for the header */
+    color: white; /* White text for better contrast */
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border for cells */
+}
+
+tr:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.3); /* Less transparent gray */
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.8); /* More transparent gray */
+}
+
+
+
+.small-transparent-banner {
+    background: linear-gradient(90deg, rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.5));
+    color: #ffffff; /* White text */
+    padding: 3px 10px; /* Smaller padding */
+    font-family: 'Press Start 2P', cursive; /* Retro pixelated font */
+    font-size: 11px; /* Smaller font size */
+    text-align: left; /* Align text to the left */
+    border: 1px solid rgba(0, 0, 0, 0.7); /* Semi-transparent black border */
+    box-shadow: 1px 1px rgba(51, 51, 51, 0.7); /* Semi-transparent 3D shadow effect */
+    width: 30%; /* Banner width reduced to 30% */
+    margin: 10px 0; /* Space above and below the banner */
+	
+	
+	
+	
+}
+
+.set-era-banner {
+    text-align: center; /* Center align the banner */
+    margin: 20px 0; /* Spacing around the banner */
+}
+
+.set-era-images {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 3 images max */
+    gap: 10px; /* Space between images */
+    justify-items: center; /* Center items within the grid */
+}
+
+.set-era-images img {
+    width: 150px; /* Fixed width for images */
+    height: auto; /* Fixed height for images */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.2s; /* Smooth transform effect on hover */
+}
+
+.set-era-images img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
