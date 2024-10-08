@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galidor Cards</title>
+   <link rel="stylesheet" href="style.css">
+	
+	<link rel="icon" href="nfig/favicon.ico" type="image/x-icon">
+</head>
+
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Collectible Tracker</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contribute.html">Contribute</a></li>
+            </ul>
+        </div>
+        <div class="visually-hidden">
+            Banner image: An assortment of Naknak figures.
+        </div>
+    </div>
+
+    <button id="toggleBackground">Toggle Background</button>
+	<h1>Galidor Card Set List</h1>
+	
+
+	<p>Status: <span style="color: red;">Incomplete</span></p>
+	
+	
+	
+	<hr>
+
+    <div class="set-container">
+	
+	<!-- Note: 4 card set with venticular is a walmart promo-->
+	
+		        <!-- 1 -->
+        				
+	<div class="card">
+   <img src="galidor/1front.png" alt="Nick Bluetooth Galidor card front" onclick="openLightbox('galidor/1front.png')">
+   <img src="galidor/1back.png" alt="Nick Bluetooth Galidor card back" onclick="openLightbox('galidor/1back.png')">
+   <div class="card-info">
+				<div class="card-name">Nick</div>
+				<div class="card-number">Join the Quest Series</div>
+				<div class="card-number">1 of 6</div>
+            </div>
+</div>
+
+		        <!-- 2 -->
+        				
+	<div class="card">
+   <img src="galidor/2front.png" alt="Allegra Galidor card front" onclick="openLightbox('galidor/2front.png')">
+   <img src="galidor/2back.png" alt="Allegra Galidor card back" onclick="openLightbox('galidor/2back.png')">
+   <div class="card-info">
+				<div class="card-name">Allegra</div>
+				<div class="card-number">Join the Quest Series</div>
+				<div class="card-number">2 of 6</div>
+            </div>
+</div>
+
+		        <!-- 3 -->
+        				
+	<div class="card">
+   <img src="galidor/3front.png" alt="Allegra Galidor card front" onclick="openLightbox('galidor/3front.png')">
+   <img src="galidor/3back.png" alt="Allegra Galidor card back" onclick="openLightbox('galidor/3back.png')">
+   <div class="card-info">
+				<div class="card-name">Gorm</div>
+				<div class="card-number">Join the Quest Series</div>
+				<div class="card-number">3 of 6</div>
+            </div>
+</div>
+
+	        <!-- 4 -->
+        				
+	<div class="card">
+   <img src="galidor/4front.png" alt="Jens Galidor card front" onclick="openLightbox('galidor/4front.png')">
+   <img src="galidor/4back.png" alt="Jens Galidor card back" onclick="openLightbox('galidor/4back.png')">
+   <div class="card-info">
+				<div class="card-name">Jens</div>
+				<div class="card-number">Join the Quest Series</div>
+				<div class="card-number">4 of 6</div>
+            </div>
+</div>
+
+        <!-- 5 -->
+        				
+	<div class="card">
+   <img src="galidor/5front.png" alt="Nepol Galidor card front" onclick="openLightbox('galidor/5front.png')">
+   <img src="galidor/5back.png" alt="Nepol Galidor card back" onclick="openLightbox('galidor/5back.png')">
+   <div class="card-info">
+				<div class="card-name">Euripides</div>
+				<div class="card-number">Join the Quest Series</div>
+				<div class="card-number">5 of 6</div>
+            </div>
+</div>
+	
+        <!-- 6 -->
+        				
+	<div class="card">
+   <img src="galidor/6front.png" alt="Nepol Galidor card front" onclick="openLightbox('galidor/6front.png')">
+   <img src="galidor/6back.png" alt="Nepol Galidor card back" onclick="openLightbox('galidor/6back.png')">
+   <div class="card-info">
+				<div class="card-name">Nepol</div>
+				<div class="card-number">Join the Quest Series</div>
+				<div class="card-number">6 of 6</div>
+            </div>
+</div>
+
+
+
+
+				
+ 
+ 
+ 
+ 
+ 
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll("img");
+        images.forEach(img => {
+            img.onerror = function() {
+                this.src = 'diamond/noimage.png';
+            };
+        });
+    });
+</script>
+		
+    </div>
+
+<!-- Lightbox HTML and JavaScript (Place this before the closing </body> tag) -->
+<div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox();">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged image">
+</div>
+
+<script>
+    function openLightbox(src) {
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+</script>
+
+
+ <script>
+        const button = document.getElementById('toggleBackground');
+        const body = document.body;
+
+        // Check localStorage to set the initial background
+        if (localStorage.getItem('background') === 'black') {
+            body.classList.add('black-background');
+        }
+
+        button.addEventListener('click', function() {
+            body.classList.toggle('black-background');
+            // Update localStorage based on the current background state
+            if (body.classList.contains('black-background')) {
+                localStorage.setItem('background', 'black');
+            } else {
+                localStorage.setItem('background', 'default');
+            }
+        });
+    </script>
+	
+			<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+	
+
+
+
