@@ -302,3 +302,32 @@ tr:nth-child(odd) {
 .set-era-images img:hover {
     transform: scale(1.05); /* Slight zoom on hover */
 }
+
+.update-log {
+    width: 100%;
+    max-width: 300px; /* Adjust width as desired */
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border to match dark theme */
+    background-color: rgba(30, 30, 30, 0.8); /* Dark transparent grey */
+    border-radius: 5px;
+}
+
+.update-log h2 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #fff; /* White text */
+}
+
+.log-content {
+    max-height: 200px; /* Adjust height as desired */
+    overflow-y: auto;
+    padding-right: 10px; /* Space for scrollbar */
+}
+
+.log-content p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #ddd; /* Light grey text for readability */
+}
+
