@@ -385,36 +385,96 @@ body {
     font-size: 1.2rem;
 }
 
-.custom-box {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* New */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.custom-box img {
+.clickable-box {
+    position: relative;
+    width: 300px; /* Set desired width */
+    height: 200px; /* Set desired height */
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #ccc;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.clickable-box:hover {
+    transform: scale(1.05); /* Zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.clickable-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
 }
 
-.custom-box .text-overlay {
+.banner {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between; /* Add space between the boxes */
+    gap: 10px; /* Adjust spacing between the boxes */
+    flex-wrap: wrap; /* Ensure boxes wrap to the next row if necessary */
+}
+
+.box {
+    background-color: #333; /* Example background color */
     color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%; /* Adjust width as needed */
     text-align: center;
 }
 
-.custom-box:hover .text-overlay {
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Adjust spacing between boxes */
+}
+
+.box {
+    background-color: #333; /* Example background color */
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.small-transparent-banner2 {
+    background: linear-gradient(90deg, rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.5));
+    color: #ffffff; /* White text */
+    padding: 3px 10px; /* Smaller padding */
+    
+    font-size: 11px; /* Smaller font size */
+    text-align: center; /* Align text to the left */
+    border: 1px solid rgba(0, 0, 0, 0.7); /* Semi-transparent black border */
+    box-shadow: 1px 1px rgba(51, 51, 51, 0.7); /* Semi-transparent 3D shadow effect */
+    width: 100%; /* Banner width reduced to 30% */
+    margin: 10px 0; /* Space above and below the banner */
+	
+	body {
+    display: flex; /* Flex layout to align main content and sidebar side by side */
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 }
