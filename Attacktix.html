@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naknak Set List</title>
+   <link rel="stylesheet" href="style.css">
+	
+	<link rel="icon" href="nfig/favicon.ico" type="image/x-icon">
+	
+</head>
+
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Forever2000.com</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contribute.html">Contribute</a></li>
+            </ul>
+        </div>
+        <div class="visually-hidden">
+            Banner image: An assortment of Naknak figures.
+        </div>
+    </div>
+
+    <button id="toggleBackground">Toggle Background</button>
+	<h1>Naknak Complete Setlist</h1>
+		
+	<p>Status: <span style="color: red;">Incomplete</span></p>
+	
+	
+	
+<div class="small-transparent-banner">
+    <h2>Marvel Series 2</h2>
+</div>
+
+    <div class="set-container">
+        <!-- Card 1 -->
+        				<!--2 -->
+	<div class="card">
+   <img src="attackfolder/newgoblin.png" alt="Fo'nak 1 Tribanaks Naknak" onclick="openLightbox('nfig/newgoblin.png')">
+   <div class="card-info">
+				<div class="card-name">New Goblin</div>
+                <div class="card-clik">Faction: Sinister Syndicate</div>
+				<div class="card-clik">Class: Captain</div>
+				<div class="card-number">Tix: 4 </div>
+				<div class="card-number">Base: 5 </div>
+				<div class="card-number">Cost: 40</div>
+				
+            </div>
+            </div>
+</div>
+
+ 
+ 
+ </div>
+ 
+ 
+ 
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll("img");
+        images.forEach(img => {
+            img.onerror = function() {
+                this.src = 'nfig/noimage.png';
+            };
+        });
+    });
+</script>
+		
+    </div>
+
+<!-- Lightbox HTML and JavaScript (Place this before the closing </body> tag) -->
+<div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox();">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged image">
+</div>
+
+<script>
+    function openLightbox(src) {
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+</script>
+
+
+ <script>
+        const button = document.getElementById('toggleBackground');
+        const body = document.body;
+
+        // Check localStorage to set the initial background
+        if (localStorage.getItem('background') === 'black') {
+            body.classList.add('black-background');
+        }
+
+        button.addEventListener('click', function() {
+            body.classList.toggle('black-background');
+            // Update localStorage based on the current background state
+            if (body.classList.contains('black-background')) {
+                localStorage.setItem('background', 'black');
+            } else {
+                localStorage.setItem('background', 'default');
+            }
+        });
+    </script>
+	
+	<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+	
+
+
