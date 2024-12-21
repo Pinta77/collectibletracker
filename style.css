@@ -477,5 +477,27 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.image-container {
+  display: inline-block;      /* Ensures the container wraps around the image and caption */
+  text-align: center;         /* Centers the text below the image */
+  padding: 10px;              /* Adds padding around the image and text */
+}
+
+.image-with-border {
+  width: 300px;               /* Adjust width as needed */
+  border: 5px solid rgba(0, 0, 0, 0.2);  /* Transparent border with a slight shadow effect */
+  border-radius: 15px;        /* Rounded corners */
+  padding: 10px;              /* Optional: adds padding inside the border */
+  box-sizing: border-box;     /* Ensures padding and border don't affect the image size */
+}
+
+.image-caption {
+  font-size: 14px;            /* Smaller text */
+  color: #555;                /* A gray color for the caption */
+  margin-top: 8px;            /* Adds space between the image and the caption */
+  font-family: Arial, sans-serif; /* Optional: adjusts font style */
+}
+
+
 }
 
