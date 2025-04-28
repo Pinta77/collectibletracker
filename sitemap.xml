@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.forever2000.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.forever2000.com/naknaksetlist.html</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.forever2000.com/rumblerobotspowercardsbaseseriessetlist.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.forever2000.com/rumblerobotsdiamondseriessetlist.html</loc>
+    <priority>0.9</priority>
+  </url>
+  
+   <url>
+    <loc>https://www.forever2000.com/rumblerobotsinvasionsetlist.html</loc>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.forever2000.com/BohrokAwake.html</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.forever2000.com/legendmaker.html</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.forever2000.com/naknakblog1.html</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://www.forever2000.com/contact.html</loc>
+    <priority>0.1</priority>
+  </url>
+  
+    <url>
+    <loc>https://www.forever2000.com/contribute.html</loc>
+    <priority>0.2</priority>
+  </url>
+  
+
+
+</urlset>
